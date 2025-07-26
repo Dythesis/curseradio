@@ -91,7 +91,13 @@ class OPMLNode:
         elif type == "audio":
             node = OPMLAudio(text=text, attr=attr)
             assert len(element) == 0
+
+
+	else:
+              return None
+
         return node
+
 
     def __init__(self, text, attr):
         self.text = text
